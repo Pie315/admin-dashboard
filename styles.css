@@ -59,7 +59,10 @@ body {
 
 .right {
     margin-right: 35px;
-    margin-top: 35px;;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
 }
 
 .announcements {
@@ -68,8 +71,21 @@ body {
 
 .anno-cont {
     background-color: whitesmoke;
-    height: 300px;
-    width: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    border-collapse: collapse;
+}
+
+.contents {
+    border-bottom: 3px solid black;
+    padding: 10px 0 10px 0;
+}
+
+.contents:last-child {
+    border-bottom: none;
 }
 
 .section {
