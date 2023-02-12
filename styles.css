@@ -28,12 +28,23 @@ body {
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content;
     grid-auto-rows: min-content;
+    gap: 20px;
+    padding: 30px 0px 15px 30px;
+}
+
+.sidebarText {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .sidebarImg {
-    width: 40px;
+    width: 30px;
     height: auto;
     filter: invert(100%);
+}
+
+.spacer {
+    height: 30px;
 }
 
 .name {
