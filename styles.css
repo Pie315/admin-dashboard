@@ -43,6 +43,11 @@ body {
     filter: invert(100%);
 }
 
+.sidebarText:hover,
+.sidebarImg:hover {
+    cursor: pointer;
+}
+
 .spacer {
     height: 30px;
 }
@@ -76,6 +81,9 @@ body {
     background-color: whitesmoke;
     height: 300px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
 }
 
 .right {
@@ -86,10 +94,6 @@ body {
     grid-template-rows: min-content min-content;
 }
 
-.announcements {
-
-}
-
 .anno-cont {
     background-color: whitesmoke;
     margin-top: 20px;
@@ -98,6 +102,24 @@ body {
     grid-template-columns: 1fr;
     padding: 40px;
     border-collapse: collapse;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+}
+
+.trend-cont {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    background-color: whitesmoke;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    grid-auto-rows: min-content;
+    gap: 20px;
 }
 
 .contents {
@@ -123,4 +145,8 @@ body {
 
 .header {
     background-color: whitesmoke;
+}
+
+.trending {
+    margin-top: 35px;
 }
