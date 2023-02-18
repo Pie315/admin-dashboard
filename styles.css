@@ -15,7 +15,7 @@ body {
 
 .page {
     display: grid;
-    grid-template-columns: minmax(300px, 20vw) 1fr;
+    grid-template-columns: minmax(250px, 18vw) 1fr;
     grid-template-rows: min-content 1fr;
 }
 
@@ -91,7 +91,7 @@ body {
 
 .card {
     background-color: rgb(255, 145, 0);
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
@@ -113,6 +113,7 @@ body {
 }
 
 .cardTitle {
+    font-size: 20px;
     font-weight: 500;
     grid-column: 1 / 8;
     grid-row: 1 / 2;
@@ -120,6 +121,7 @@ body {
 
 .cardText {
     margin-top: 10px;
+    font-size: 15px;
     color: var(--grey-text);
     grid-column: 1 / 8;
     grid-row: 2 / 3;
@@ -136,7 +138,7 @@ body {
 }
 
 .icons>img {
-    width: 35px;
+    width: 27px;
     height: auto;
     cursor: pointer;
 }
@@ -206,7 +208,7 @@ body {
     background-color: white;
     display: grid;
     grid-template-rows: 80px min-content;
-    margin: 20px 40px 20px 40px;
+    margin: 10px 40px 20px 40px;
 }
 
 .topRow {
@@ -216,29 +218,33 @@ body {
     align-items: center;
 }
 
-.botRow {
-    display: flex;
+.topRow > img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
 }
 
-.topRow > img {
-    width: 35px;
-    height: auto;
+.topRow > h1 {
+    font-size: 17px;
+    font-weight: 600;
+    align-self: center;
 }
 
 .submit {
-    width: 35px;
+    width: 30px;
     height: auto;
     background-color:rgba(0, 0, 0, 0)
 }
 
 .search {
     flex-grow: 1;
-    height: 40px;
+    height: 30px;
     border: black;
     border-radius: 25px;
     background-color: rgb(190, 190, 190);
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 17px;
+    color:rgb(104, 104, 104);
 }
 
 .search:focus {
@@ -254,11 +260,54 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .profilePic {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline;
     margin: 0 auto;
+}
+
+.profilePicLarge {
+    width: 60px;
+    height: 60px;
+    display: inline;
+    margin: 0 auto;
+
+}
+
+.botRow {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content min-content;
+    align-items: center;
+    gap: 20px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.top {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bot {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botRow > button {
+    height: 40px;
+    background-color: var(--sidbar-green);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100px;
 }
